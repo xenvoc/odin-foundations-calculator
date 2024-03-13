@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin project calculator</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display disabled">
+        <div class="btn-row">
+            <button onclick="clearBuffer()">C</button>
+            <button onclick="opClick('/')">/</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendNum('7')">7</button>
+            <button onclick="appendNum('8')">8</button>
+            <button onclick="appendNum('9')">9</button>
+            <button onclick="opClick('*')">x</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendNum('4')">4</button>
+            <button onclick="appendNum('5')">5</button>
+            <button onclick="appendNum('6')">6</button>
+            <button onclick="opClick('-')">-</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendNum('1')">1</button>
+            <button onclick="appendNum('2')">2</button>
+            <button onclick="appendNum('3')">3</button>
+            <button onclick="opClick('+')">+</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendNum('.')">.</button>
+            <button onclick="appendNum('0')">0</button>
+            <button onclick="equals()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>

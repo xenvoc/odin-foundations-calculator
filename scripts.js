@@ -15,15 +15,18 @@ function Calculator() {
 }
 
 const calc = new Calculator();
-let a = 3;
-let b = 9;
-let o = '*';
-console.log(calc.operate(o, a, b));
-a = 8;
-b = 4;
-o = '/';
-console.log(calc.operate(o, a, b));
-a = 8;
-b = 0;
-o = '/';
-console.log(calc.operate(o, a, b));
+let a = null;
+let b = null;
+let o = null;
+const buffer = document.querySelector('#buffer');
+
+function nullVars () {
+    a = null;
+    b = null;
+    o = null;
+}
+
+function clearBuffer() {
+    nullVars();
+    buffer.value = '';
+}

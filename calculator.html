@@ -14,34 +14,34 @@
     <div class="calculator">
         <input type="text" id="buffer" disabled>
         <div class="btn-row">
-            <button onclick="clearBuffer()">C</button>
-            <button onclick="backspace()">⌫</button>
-            <button onclick="opClick('^')">^</button>
-            <button onclick="opClick('/')">/</button>
+            <button class="auxiliary" onclick="clearBuffer()">C</button>
+            <button class="auxiliary" onclick="backspace()">⌫</button>
+            <button class="auxiliary" onclick="opClick('^')">^</button>
+            <button class="auxiliary" onclick="opClick('/')">/</button>
         </div>
         <div class="btn-row">
             <button onclick="appendNum('7')">7</button>
             <button onclick="appendNum('8')">8</button>
             <button onclick="appendNum('9')">9</button>
-            <button onclick="opClick('*')">x</button>
+            <button class="auxiliary" onclick="opClick('*')">x</button>
         </div>
         <div class="btn-row">
             <button onclick="appendNum('4')">4</button>
             <button onclick="appendNum('5')">5</button>
             <button onclick="appendNum('6')">6</button>
-            <button onclick="opClick('-')">-</button>
+            <button class="auxiliary" onclick="opClick('-')">-</button>
         </div>
         <div class="btn-row">
             <button onclick="appendNum('1')">1</button>
             <button onclick="appendNum('2')">2</button>
             <button onclick="appendNum('3')">3</button>
-            <button onclick="opClick('+')">+</button>
+            <button class="auxiliary" onclick="opClick('+')">+</button>
         </div>
         <div class="btn-row">
             <button onclick="plusMinus()">+/-</button>
             <button onclick="appendNum('0')">0</button>
             <button onclick="addDot()">.</button>
-            <button onclick="equals()">=</button>
+            <button class="equals" onclick="equals()">=</button>
         </div>
     </div>
 </body>

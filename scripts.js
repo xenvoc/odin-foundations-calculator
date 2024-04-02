@@ -286,3 +286,72 @@ function appendB () {
         for (let i = 0; i < lackingZeroesCount; i++) appendBuffer(0);
     } 
 }
+
+document.addEventListener('keydown', function(event) {
+    switch (event.key) {
+        case '1':
+            appendNum('1');
+            break;
+        case '2':
+            appendNum('2');
+            break;
+        case '3':
+            appendNum('3');
+            break;
+        case '4':
+            appendNum('4');
+            break;
+        case '5':
+            appendNum('5');
+            break;
+        case '6':
+            appendNum('6');
+            break;
+        case '7':
+            appendNum('7');
+            break;
+        case '8':
+            appendNum('8');
+            break;
+        case '9':
+            appendNum('9');
+            break;
+        case '0':
+            appendNum('0');
+            break;
+        case '.':
+            addDot();
+            break;
+        case 'C':
+            clearBuffer();
+            break;
+        case 'Backspace':
+            backspace();
+            break;
+        case '^':
+            opClick(event.key);
+            break;
+        case '/':
+            opClick(event.key);
+            break;
+        case '*':
+            opClick(event.key);
+            break;
+        case '-':
+            opClick(event.key);
+            break;
+        case '+':
+            opClick(event.key);
+            break;
+        case '=':
+            equals();
+            break;
+        case 'Enter':
+            equals();
+            break;
+        case '±':
+            plusMinus();
+            break;
+        default:
+    }
+});
